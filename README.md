@@ -3,3 +3,5 @@
 - Estado del proyecto en construción.
 
 - Se crea el index.html basico.
+
+iniciando...
