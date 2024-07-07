@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Desafío 1 - Encriptador de Texto</title>
 </head>
 
 <body>
-    <main>
-        <header>
-            <h1> <img src="img/logo.jpg" alt="Logo Alura Oracle One"></h1>
+    <main class="contenidoPrincipal">
+        <header class="encabezado">
+            <img class="encabezadoImg" src="img/logo.jpg" alt="Logo Alura Oracle One">
+            <h1 class="encabezadoTitulo">ENCRIPTADOR</h1>
         </header>
-        <section>
-            <textarea cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
-            <div>
-                <img src="img/admiracion.png" alt="condiciones">
+        <section class="area1">
+            <textarea class="text" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
+            <div class="condiciones">
+                <img class="admiracion" src="img/admiracion.png" alt="condiciones">
                 <p> * acepta letras miniusculas y sin acentos </p>
             </div>
-            <div>
-                <button onclick="botonEncriptar()">ENCRIPTAR</button>
-                <button onclick="botonDesencriptar()">DESENCRIPTAR</button>
+            <div class="arae1botones">
+                <button class="botones" onclick="botonEncriptar()">ENCRIPTAR</button>
+                <button class="botones" onclick="botonDesencriptar()">DESENCRIPTAR</button>
             </div>
         </section>
-        <section>
-            <textarea readonly="" placeholder="Mensaje no encontrado" cols="17" rows="8"></textarea>
-            <p>Ingrese Texto para Encriptar o Desencriptar</p>
-            <button onclick="copiar()">COPIAR</button>
+        <section class="area2">
+            <textarea class="area2mensaje" readonly="" placeholder="Mensaje no encontrado" cols="17"
+             rows="8"></textarea>
+            <p class="area2info">Ingrese Texto para Encriptar o Desencriptar</p>
+            <button class="botones botoncopiar" onclick="copiar()">COPIAR</button>
         </section>
-        <footer>
-            <p>Creado por Mario Marín <br> <br> Julio 2024 <br> <br></p>
+        <footer class="pie">
+            <p class="hechoPor">Creado por Mario <br> <br> Julio 2024 <br> <br></p>
             <a href="https://github.com/marin-duv/" target="_blank">
-                <img src="img/128pxGithub.png" alt="Github de mario user: marin-duv">
+                <img class="imgGithub" src="img/128pxGithub.png" alt="Github de mario user: marin-duv">
             </a>
         </footer>
     </main>
