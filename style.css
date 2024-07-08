@@ -24,7 +24,7 @@ body {
 .contenidoPrincipal {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: minmax(70px, auto) 80vh minmax(50px, auto);
+    grid-template-rows: minmax(70px, auto) 70vh minmax(50px, auto);
     height: 100vh;
     grid-template-areas:
         "encabezado encabezado"
@@ -105,12 +105,12 @@ body {
 
 }
 
-.area1botones {
+.area1btn {
     display: grid;
     grid-auto-flow: column;
 }
 
-.botones {
+.btn {
     background: blue;
     cursor: pointer;
     border: none;
@@ -144,9 +144,9 @@ body {
     display: grid;
     background: burlywood;
     border-radius: 32px;
-    margin: 20px;
-    margin-right: 120px;
-    min-width: 360px;
+    margin: 10px;
+    margin-right: 80px;
+    min-width: 420px;
 
 }
 
@@ -209,7 +209,7 @@ body {
 }
 
 .imgGithub {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
