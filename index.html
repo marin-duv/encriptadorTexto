@@ -2,45 +2,54 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css"/>
 
-    <title>Desafío 1 - Encriptador de Texto</title>
+  <title>Desafío 1 G7 - Encriptador</title>
 </head>
 
 <body>
-    <main class="contenidoPrincipal">
-        <header class="encabezado">
-            <img class="encabezadoImg" src="img/logo.jpg" alt="Logo Alura Oracle One">
-            <h1 class="encabezadoTitulo">ENCRIPTADOR</h1>
-        </header>
-        <section class="area1">
-            <textarea class="text" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
-            <div class="condiciones">
-                <img class="admiracion" src="img/admiracion.png" alt="condiciones">
-                <p> * acepta letras miniusculas y sin acentos </p>
-            </div>
-            <div class="arae1botones">
-                <button class="botones" onclick="botonEncriptar()">ENCRIPTAR</button>
-                <button class="botones" onclick="botonDesencriptar()">DESENCRIPTAR</button>
-            </div>
-        </section>
-        <section class="area2">
-            <textarea class="area2mensaje" readonly="" placeholder="Mensaje no encontrado" cols="17"
-             rows="8"></textarea>
-            <p class="area2info">Ingrese Texto para Encriptar o Desencriptar</p>
-            <button class="botones botoncopiar" onclick="copiar()">COPIAR</button>
-        </section>
-        <footer class="pie">
-            <p class="hechoPor">Creado por Mario <br> <br> Julio 2024 <br> <br></p>
-            <a href="https://github.com/marin-duv/" target="_blank">
-                <img class="imgGithub" src="img/128pxGithub.png" alt="Github de mario user: marin-duv">
-            </a>
-        </footer>
-    </main>
-    <script> scr = "app.js" </script>
+  <main class="contenidoPrincipal">
+    <header class="encabezado">
+      <img class="encabezadoImg" src="img/logo.jpg" alt="Logo Alura Oracle One" />
+      <h1 class="encabezadoTitulo">ENCRIPTADOR</h1>
+    </header>
+    <section class="area1">
+      <textarea class="text" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
+      <div class="condiciones">
+        <img class="admiracion" src="img/admiracion.png" alt="condiciones" />
+        <p>* acepta letras miniusculas y sin acentos</p>
+      </div>
+      <div class="arae1btn">
+        <button class="btn" onclick="botonEncriptar()">ENCRIPTAR</button>
+        <button class="btn" onclick="botonDesencriptar()">
+          DESENCRIPTAR
+        </button>
+      </div>
+    </section>
+    <section class="area2">
+      <textarea class="area2mensaje" readonly="" placeholder="Mensaje no encontrado" cols="17" rows="8"></textarea>
+      <p class="area2info">Ingrese Texto para Encriptar o Desencriptar</p>
+      <button class="botones botoncopiar" onclick="copiar()">COPIAR</button>
+    </section>
+    <footer class="pie">
+      <p class="hechoPor">
+        Creado por Mario <br />
+        <br />
+        Julio 2024 <br />
+        <br />
+      </p>
+      <a href="https://github.com/marin-duv/" target="_blank">
+        <img class="imgGithub" src="img/128pxGithub.png" alt="Github de mario user: marin-duv" />
+      </a>
+    </footer>
+  </main>
+  <script>
+    scr = "app.js";
+  </script>
 </body>
 
 </html>
