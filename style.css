@@ -7,7 +7,7 @@
     unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
 }
 
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ body {
     font-size: x-large;
     color: #0a3871;
 }
-
+/* css del area del encriptador */
 .contenidoPrincipal .area1 {
     grid-area: area1;
     display: grid;
@@ -61,8 +61,31 @@ body {
     margin: 0 auto;
     align-items: center;
 }
+.area1textarea{
+    background: none;
+    border: none;
+    margin: 20px 20px 20px 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: rgb(4, 17, 41);
+    resize:none;
+}
 
-.text {
+.area1.area1textarea::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: rgb(126, 93, 5);
+}
+
+.area1textarea:focus{
+    outline: none;
+}
+
+.area1mensaje {
     background: none;
     border: none;
     margin: 20px 20px 20px 40px;
@@ -97,7 +120,7 @@ body {
     width: 30px;
     height: 30px;
     margin-top: -8px;
-    filter: hue-rotate(120dg)
+   /* filter: hue-rotate(120dg)*/
 }
 
 .condiciones p {
@@ -105,12 +128,12 @@ body {
 
 }
 
-.area1btn {
+.area1botones {
     display: grid;
     grid-auto-flow: column;
 }
 
-.btn {
+.botones {
     background: blue;
     cursor: pointer;
     border: none;
@@ -133,20 +156,20 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: #102958;
     background-size: 400%;
     border-radius: 10px;
     filter: blur(12px);
+    /*animation: glowing 15s linear infinite;*/
 }
-
+/* css del mensaje encriptado o desencriptado*/
 .contenidoPrincipal .area2 {
     grid-area: area2;
     display: grid;
-    background: burlywood;
+    background: #fff;
     border-radius: 32px;
-    margin: 10px;
-    margin-right: 80px;
-    min-width: 420px;
+    margin: 20px;
+    margin-right: 120px;
+    min-width: 360px;
 
 }
 
@@ -156,7 +179,7 @@ body {
     color: #225e5c;
 }
 
-.area2mensaje:placeholder {
+.area2mensaje::placeholder {
     font-size: 24px;
     text-align: center;
     font-weight: bold;
@@ -167,7 +190,11 @@ body {
 }
 
 .area2mensaje {
-    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    filter: hue-rotate(120deg);
+    background-color: #fff;
     border: none;
     font-style: normal;
     font-weight: 400;
@@ -212,4 +239,92 @@ body {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+}
+
+/* diseño responsive */
+/* pantallas pc */
+@media screen and (max-width:1060px){
+    .contenidoPrincipal {
+        max-width: 700px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr 1fr 1fr;
+        grid-template-areas: 
+        "encabezado"
+        "area1"
+        "area2"
+        "pie";
+    }
+    .contenidoPrincipal .area1 {
+        grid-area: area1;
+        display: grid;
+        grid-template-rows: 400px 10px 100px;
+    }
+    .area1textarea {
+        height: 350px;
+        width: 600px;
+    }
+    .arae1botones {
+        margin: 0 auto;        
+    }
+    .contenidoPrincipal .area2 {
+        justify-content: center;
+        height: 350px;
+    }
+    .area2 {
+        width: 95%;
+    }
+    .area2mensaje{
+        background-image: none;
+    }
+    .area2info {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .area2mensaje {
+        width: 500px;
+        height: 100px;
+    }
+    .btncopiar.botones {
+        width: auto;
+        margin-top: -10px;
+    }
+}
+/* diseño responsive */
+/* pantallas celular */
+@media screen and (max-width:690px) {
+    .encabezadoImg{
+        margin-left: 30px;        
+    }
+    .area1textarea{
+        height: 300px;
+        width: 300px;
+    }
+    .area1botones{
+        grid-auto-flow: row;
+    }
+    .contenidoPrincipal .area1 {
+        grid-template-rows: 340px 10px 175px;
+    }
+    .condiciones{
+        margin-left: 10px;
+        justify-content: left;
+    }
+    .botones{
+        margin: 5px;
+    }
+    .contenidoPrincipal .area2{
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+    .area2mensaje {        
+        width: 200px;
+        height: 200px;
+    }
+    .contenidoPrincipal .pie {
+        margin-top: 35px;
+        font-size: 0.75rem;
+    }
 }

@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="reset.css"/>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/virtual_reality_icon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap">
   <title>Desafío 1 G7 - Encriptador</title>
+  <!-- parte 1 style para no mostrar el destello al cargar la pagina -->
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s, linear;
+    }
+  </style> 
 </head>
 
 <body>
@@ -18,16 +28,14 @@
       <h1 class="encabezadoTitulo">ENCRIPTADOR</h1>
     </header>
     <section class="area1">
-      <textarea class="text" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
+      <textarea class="area1mensaje" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
       <div class="condiciones">
         <img class="admiracion" src="img/admiracion.png" alt="condiciones" />
         <p>* acepta letras minusculas y sin acentos</p>
       </div>
-      <div class="arae1btn">
-        <button class="btn" onclick="botonEncriptar()">ENCRIPTAR</button>
-        <button class="btn" onclick="botonDesencriptar()">
-          DESENCRIPTAR
-        </button>
+      <div class="arae1botones">
+        <button class="botones" onclick="encriptarBoton()">ENCRIPTAR</button>
+        <button class="botones" id="desencriptarBoton" onclick="desencriptarBoton()"> DESENCRIPTAR</button>
       </div>
     </section>
     <section class="area2">
@@ -47,6 +55,13 @@
       </a>
     </footer>
   </main>
-  <script scr="app.js"></script>
-</body>
+  <!-- parte 2 script para no mostrar el destello al cargar la pagina -->
+  <script> 
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.style.visibility = "visible";
+      document.body.style.opacity = "1";
+    });
+    </script>
+      <script src="app.js" defer ></script>
+  </body>
 </html>
