@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: burlywood;
+    background-color: rgb(169, 179, 244);
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,6 +95,7 @@ body {
     line-height: 150%;
     color: rgb(4, 17, 41);
     resize: none;
+    outline: none;
 }
 
 .text::placeholder {
@@ -120,7 +121,7 @@ body {
     width: 30px;
     height: 30px;
     margin-top: -8px;
-   /* filter: hue-rotate(120dg)*/
+    filter: hue-rotate(120dg)
 }
 
 .condiciones p {
@@ -133,8 +134,9 @@ body {
     grid-auto-flow: column;
 }
 
+
 .botones {
-    background: blue;
+    background: #0a3871;;
     cursor: pointer;
     border: none;
     padding: 16px 20px;
@@ -159,8 +161,9 @@ body {
     background-size: 400%;
     border-radius: 10px;
     filter: blur(12px);
-    /*animation: glowing 15s linear infinite;*/
 }
+
+
 /* css del mensaje encriptado o desencriptado*/
 .contenidoPrincipal .area2 {
     grid-area: area2;
@@ -217,8 +220,8 @@ body {
     align-items: center;
     justify-content: center;
     margin: 40px;
-    color: #0a3871;
-    background-color: #225e5c;
+    color: #fff;
+    background-color: #0a3871;
 }
 
 .contenidoPrincipal .pie {
@@ -241,90 +244,145 @@ body {
     margin-right: 10px;
 }
 
-/* diseño responsive */
-/* pantallas pc */
-@media screen and (max-width:1060px){
+  /* diseño responsive */
+  /* pantallas grandes */
+
+  @media screen and (max-width: 1200px) {
     .contenidoPrincipal {
-        max-width: 700px;
-        margin: 0 auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 6fr 1fr 1fr;
-        grid-template-areas: 
+      max-width: 900px;
+    }
+  }
+   /* diseño responsive */
+  /* pantallas pc */
+  @media screen and (max-width: 1060px) {
+    .contenidoPrincipal {
+      max-width: 700px;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: 
         "encabezado"
         "area1"
         "area2"
         "pie";
     }
     .contenidoPrincipal .area1 {
-        grid-area: area1;
-        display: grid;
-        grid-template-rows: 400px 10px 100px;
+      grid-template-rows: 400px 10px 100px;
     }
-    .area1textarea {
-        height: 350px;
-        width: 600px;
+    .area1mensaje {
+      height: 350px;
     }
     .arae1botones {
-        margin: 0 auto;        
+      margin: 0 auto;
     }
     .contenidoPrincipal .area2 {
-        justify-content: center;
-        height: 350px;
+      justify-content: center;
+      height: 350px;
     }
     .area2 {
-        width: 95%;
-    }
-    .area2mensaje{
-        background-image: none;
-    }
-    .area2info {
-        margin: 0 auto;
-        text-align: center;
+      width: 95%;
     }
     .area2mensaje {
-        width: 500px;
-        height: 100px;
+      background-image: none;
+      width: 500px;
+      height: 100px;
     }
-    .btncopiar.botones {
-        width: auto;
-        margin-top: -10px;
+    .area2info {
+      margin: 0 auto;
+      text-align: center;
     }
-}
-/* diseño responsive */
-/* pantallas celular */
-@media screen and (max-width:690px) {
-    .encabezadoImg{
-        margin-left: 30px;        
+    .botoncopiar.botones {
+      width: auto;
+      margin-top: -10px;
     }
-    .area1textarea{
-        height: 300px;
-        width: 300px;
-    }
-    .area1botones{
-        grid-auto-flow: row;
+  }
+   /* diseño responsive */
+  /* pantallas tablet */
+  @media screen and (max-width: 768px) {
+    .contenidoPrincipal {
+      max-width: 600px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: 
+        "encabezado"
+        "area1"
+        "area2"
+        "pie";
     }
     .contenidoPrincipal .area1 {
-        grid-template-rows: 340px 10px 175px;
+      grid-template-rows: 340px 10px 175px;
     }
-    .condiciones{
-        margin-left: 10px;
-        justify-content: left;
+    .area1mensaje {
+      height: 300px;
+      width: 100%;
     }
-    .botones{
-        margin: 5px;
+    .area1botones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .contenidoPrincipal .area2{
-        justify-content: center;
-        height: 300px;
-        width: 300px;
-        margin: auto;
+    .condiciones {
+      margin-left: 10px;
+      justify-content: left;
     }
-    .area2mensaje {        
-        width: 200px;
-        height: 200px;
+    .contenidoPrincipal .area2 {
+      justify-content: center;
+      height: 300px;
+      width: 100%;
+      margin: auto;
+    }
+    .area2mensaje {
+      width: 100%;
+      height: 200px;
     }
     .contenidoPrincipal .pie {
-        margin-top: 35px;
-        font-size: 0.75rem;
+      margin-top: 35px;
+      font-size: 0.75rem;
     }
-}
+  }
+   /* diseño responsive */
+  /* pantallas celular */
+  @media screen and (max-width: 480px) {
+    .encabezado {
+      flex-direction: column;
+      align-items: center;
+    }
+    .encabezadoImg {
+      margin: 0 auto;
+      max-width: 50px;
+    }
+    .encabezadoTitulo {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .contenidoPrincipal .area1 {
+      grid-template-rows: 400px 20px 200px;
+    }
+    .area1mensaje {
+      height: 250px;
+      width: 85%;
+    }
+    .area1botones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+    .contenidoPrincipal .area2 {
+      justify-content: center;
+      height: 260px;
+      width: 100%;
+      margin: auto;
+    }
+    .area2mensaje {
+      width: 100%;
+      height: 150px;
+    }
+    .botones {
+      margin: 10px;
+    }
+    .contenidoPrincipal .pie {
+      margin-top: 10px;
+      font-size: 1.0rem;
+    }
+  }
