@@ -29,20 +29,49 @@
     </header>
     <section class="area1">
       <textarea class="area1mensaje" cols="auto" rows="6" placeholder="Escribir aqui"></textarea>
+      
       <div class="condiciones">
         <img class="admiracion" src="img/admiracion.png" alt="condiciones" />
         <p>* acepta letras minusculas y sin acentos</p>
       </div>
+      
       <div class="arae1botones">
-        <button class="botones" onclick="encriptarBoton()">ENCRIPTAR</button>
-        <button class="botones" id="desencriptarBoton" onclick="desencriptarBoton()"> DESENCRIPTAR</button>
+        <div class="wrapper">
+      
+          <button class="botones" onclick="encriptarBoton()">
+          ENCRIPTADOR 
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+      
+          <button class="botones" onclick="desencriptarBoton()">
+          DESENCRIPTADOR 
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+        <!-- <button class="botones" onclick="encriptarBoton()">ENCRIPTAR</button>-->
+        <!--<button class="botones" onclick="desencriptarBoton()"> DESENCRIPTAR</button>-->
+        </div>
       </div>
     </section>
+
     <section class="area2">
       <textarea class="area2mensaje" readonly="" placeholder="Mensaje no encontrado" cols="17" rows="8"></textarea>
       <p class="area2info">Ingrese Texto para Encriptar o Desencriptar</p>
-      <button class="botones botoncopiar" onclick="copiar()">COPIAR</button>
+      <div class="wrapper">
+      <button class="botones botoncopiar" onclick="copiar()">COPIAR   
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      </div>
     </section>
+
     <footer class="pie">
       <p class="hechoPor">
         Creado por Mario <br />
@@ -54,14 +83,18 @@
         <img class="imgGithub" src="img/128pxGithub.png" alt="Github de mario user: marin-duv" />
       </a>
     </footer>
+
   </main>
+
   <!-- parte 2 script para no mostrar el destello al cargar la pagina -->
   <script> 
     document.addEventListener("DOMContentLoaded", function() {
       document.body.style.visibility = "visible";
       document.body.style.opacity = "1";
     });
-    </script>
-      <script src="app.js" defer ></script>
-  </body>
+  </script>
+  
+  <script src="app.js" defer ></script>
+  
+</body>
 </html>
