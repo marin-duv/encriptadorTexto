@@ -35,8 +35,6 @@ https://github.com/marin-duv/encriptadorTexto.git
 
 ## Autor
 
-![174910740](https://github.com/user-attachments/assets/bb226b2f-4d86-435e-bd21-d93231321bcb)
+[<img src="https://github.com/user-attachments/assets/bb226b2f-4d86-435e-bd21-d93231321bcb" width=115><br><sub>Mario</sub>]([https://github.com/marin-duv])
 
-| [<img src="https://github.com/user-attachments/assets/bb226b2f-4d86-435e-bd21-d93231321bcb" width=115><br><sub>Mario</sub>]([https://github.com/marin-duv]) |
-| :---: | :---: | :---: |
 
