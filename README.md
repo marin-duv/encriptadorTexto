@@ -16,9 +16,9 @@ Caracteristicas de la aplicación:
 
 ## 🔨 Funcionalidades del Proyecto
 
--`Funcionalidad 1`: Encriptar el texto 1- `Funcionalidad
+-`Funcionalidad 1`: Encriptar el texto.
 
--`Funcionalidad 2`: Desencriptar el texto 2- `Funcionalidad
+-`Funcionalidad 2`: Desencriptar el texto.
 
 \## Acceso al proyecto
 
@@ -35,41 +35,8 @@ https://github.com/marin-duv/encriptadorTexto.git
 
 ## Autor
 
+![174910740](https://github.com/user-attachments/assets/bb226b2f-4d86-435e-bd21-d93231321bcb)
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Mario</sub>]([https://github.com/marin-duv]) |
+| [<img src="https://github.com/user-attachments/assets/bb226b2f-4d86-435e-bd21-d93231321bcb" width=115><br><sub>Mario</sub>]([https://github.com/marin-duv]) |
 | :---: | :---: | :---: |
 
-
-
-
-##Índice
-
-*[Título e imagen de portada](#Título-e-imagen-de-portada)
-
-*[Insignias](#insignias)
-
-*[Índice](#índice)
-
-*[Descripción del proyecto](#descripción-del-proyecto)
-
-*[Estado del proyecto](#Estado-del-proyecto)
-
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
-*[Acceso al proyecto](#acceso-proyecto)
-
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
-
-*[Personas Contribuyentes](#personas-contribuyentes)
-
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-* [Licencia](#licencia)
-
-*[Conclusión](#conclusión)
-
-- Estado del proyecto en construción.
-
-- Se crea el index.html basico.
-
-iniciando...
