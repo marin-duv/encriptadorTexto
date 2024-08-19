@@ -26,6 +26,9 @@ Caracteristicas de la aplicación:
 
 https://github.com/marin-duv/encriptadorTexto.git
 
+**github-pages
+
+https://marin-duv.github.io/encriptadorTexto/
 
 \## Tecnologías Utilizadas
 
